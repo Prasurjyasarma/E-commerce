@@ -1,0 +1,5 @@
+1. Install node js.
+2. Do npm install in the project.
+3. Install scss using (npm install scss)
+4. Install firebase using (install firebase)
+5. Install react routes (npm i routes)

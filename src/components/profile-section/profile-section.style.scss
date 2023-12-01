@@ -1,0 +1,55 @@
+// profile-section.styles.scss
+
+$primaryColor: #000000;
+$secondaryColor: #3b3b3a;
+$backgroundColor: #ffffff;
+
+.profile-section {
+  max-width: 500px;
+  margin: auto;
+  padding: 20px;
+  background-color: $backgroundColor;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin-bottom: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  h3 {
+    color: $secondaryColor;
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+
+  h1 {
+    color: $primaryColor;
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+
+  img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+  button {
+    margin-top: 20px;
+  }
+
+  // Responsive adjustments
+  @media screen and (max-width: 768px) {
+    max-width: 100%;
+    img {
+      width: 150px;
+      height: 150px;
+    }
+  }
+}
+
+// Add any additional styling you may need
