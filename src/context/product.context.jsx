@@ -1,24 +1,20 @@
-import { createContext, useState, useEffect } from "react";
-import PRODUCTS from "../shop-data.json";
+import { createContext, useState } from "react";
 
-// Create a context with default values
+// Create a context for managing the selected product state
 export const ProductContext = createContext({
-  products: [],
-  setProducts: () => {},
+  selectedProduct: null, // State to store the selected product
+  setSelectedProduct: () => {}, // Function to set the selected product
 });
 
-// Create a provider component that wraps its children with the context
+// Component to provide the ProductContext to its children
 export const ProductProvider = ({ children }) => {
-  // State for managing the product data
-  const [products, setProducts] = useState(PRODUCTS);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
-  // Set the initial data when the component mounts
-  useEffect(() => {
-    setProducts(PRODUCTS);
-  }, []);
-
-  // Create a value object to be passed to the context provider
-  const value = { products, setProducts };
+  // Define the context value
+  const value = {
+    selectedProduct,
+    setSelectedProduct,
+  };
 
   // Provide the context value to its children
   return (
