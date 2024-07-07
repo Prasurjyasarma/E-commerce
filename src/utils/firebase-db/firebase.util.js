@@ -21,7 +21,7 @@ import {
 
 //! Web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBCfYz21Kp3O6tF1vL4Xx9FfE8qB-qHLSQ",
+  apiKey: "",
   authDomain: "e-commerce-project-db35a.firebaseapp.com",
   projectId: "e-commerce-project-db35a",
   storageBucket: "e-commerce-project-db35a.appspot.com",
